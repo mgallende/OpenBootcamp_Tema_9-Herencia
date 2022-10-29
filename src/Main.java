@@ -10,14 +10,16 @@ class Main {
 
         Trabajador trabajador = new Trabajador();
 
-        //Asignamos valores a las variables de ambas clases
+        //Asignamos valores a las propiedadess de la clase Cliente
         cliente.setNombre("Manuel Gómez");
         cliente.setEdad(62);
         cliente.setTelefono(683608805);
         cliente.setCredito(5000);
-        trabajador.setNombre("Manuel Gómez");
-        trabajador.setEdad(62);
-        trabajador.setTelefono(683608805);
+
+        //Asignamos valores a las propiedades de la Clase Trabajador
+        trabajador.setNombre("Jorge López");
+        trabajador.setEdad(45);
+        trabajador.setTelefono(606606606);
         trabajador.setSalario(35000);
 
         //imprimimos por consola
