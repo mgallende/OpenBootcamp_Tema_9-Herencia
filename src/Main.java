@@ -1,8 +1,6 @@
-public
-class Main {
+public class Main {
 
-    public static
-    void main(String[] args) {
+    public static void main(String[] args) {
 
         //creamos los objetos Cliente y trabajador en el main
 
@@ -10,26 +8,26 @@ class Main {
 
         Trabajador trabajador = new Trabajador();
 
-        //Asignamos valores a las propiedadess de la clase Cliente
-        cliente.setNombre("Manuel Gómez");
-        cliente.setEdad(62);
-        cliente.setTelefono(683608805);
-        cliente.setCredito(5000);
+        //Asignamos valores a las propiedades de la clase Cliente
+        cliente.nombre = "Manuel Gómez";
+        cliente.edad = 62;
+        cliente.telefono = 683608805;
+        cliente.credito = 50150;
 
         //Asignamos valores a las propiedades de la Clase Trabajador
-        trabajador.setNombre("Jorge López");
-        trabajador.setEdad(45);
-        trabajador.setTelefono(606606606);
-        trabajador.setSalario(35000);
+        trabajador.nombre = "Jorge López";
+        trabajador.edad = 45;
+        trabajador.telefono = 606606606;
+        trabajador.salario = 350150;
 
         //imprimimos por consola
-        System.out.println("Cliente: " + cliente.getNombre() + " |  Edad: " + cliente.getEdad()
-                + " | Teléfono: " + cliente.getTelefono() + " | Crédito: " + cliente.getCredito());
+        System.out.println("Cliente: " + cliente.nombre + " |  Edad: " + cliente.edad
+                + " | Teléfono: " + cliente.telefono + " | Crédito: " + cliente.credito);
 
         System.out.println("\r\n");
 
-        System.out.println("Trabajador: " + trabajador.getNombre() + " |  Edad: " + trabajador.getEdad()
-                + " |  Teléfono: " + trabajador.getTelefono() + " |  Salario: " + trabajador.getSalario());
+        System.out.println("Trabajador: " + trabajador.nombre + " |  Edad: " + trabajador.edad
+                + " |  Teléfono: " + trabajador.telefono + " |  Salario: " + trabajador.salario);
     }
 }
 
@@ -37,60 +35,18 @@ class Main {
 // Creamos la clase Persona
 
 class Persona {
-    private String nombre;
-    private int    edad ;
-    private int    telefono;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
+    String nombre;
+    int    edad ;
+    int    telefono;
 }
 
 // Creamos la clase Cliente que hereda de Persona con extends y añadimos la propiedad crédito
 
 class Cliente extends Persona {
-    private int credito;
-
-    public int getCredito() {
-        return credito;
-    }
-
-    public void setCredito(int credito) {
-        this.credito = credito;
-    }
-
+    int credito;
 }
 
 // Creamos la clase Trabajador que hereda de Persona con extends y añadimos la propiedad salario
 class Trabajador extends Persona {
-    private int salario;
-
-    public int getSalario() {
-        return salario;
-    }
-
-    public void setSalario(int salario) {
-        this.salario = salario;
-    }
-
+    int salario;
 }
